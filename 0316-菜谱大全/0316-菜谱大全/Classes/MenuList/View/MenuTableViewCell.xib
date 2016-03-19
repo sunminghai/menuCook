@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="113" id="KGk-i7-Jjw" customClass="MenuTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="113"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="112"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YKI-83-V8z">
+                        <rect key="frame" x="8" y="16" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="iWQ-ta-Uvj"/>
+                            <constraint firstAttribute="height" constant="80" id="rWt-a5-XHo"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="苦瓜煎蛋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSq-a6-AgO">
+                        <rect key="frame" x="101" y="16" width="243" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="nAn-jV-cmA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昨晚约了一帮朋友来家里玩儿，晚上俺就弄简单又方便的火锅来吃了，大冷天的，做菜多麻烦啊。吃的热气腾腾，香香辣辣的排骨牛肉丸火锅 。 因为吃火锅很热啊，所以特别做了一道凉拌菜，清一清口感和肠胃。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7D-3z-WFA">
+                        <rect key="frame" x="101" y="45" width="243" height="51"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nSq-a6-AgO" firstAttribute="top" secondItem="YKI-83-V8z" secondAttribute="top" id="2R4-ED-9b2"/>
+                    <constraint firstItem="YKI-83-V8z" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cFY-rD-S1P"/>
+                    <constraint firstItem="nSq-a6-AgO" firstAttribute="leading" secondItem="YKI-83-V8z" secondAttribute="trailing" constant="13" id="gws-pZ-FiO"/>
+                    <constraint firstItem="T7D-3z-WFA" firstAttribute="centerX" secondItem="nSq-a6-AgO" secondAttribute="centerX" id="o5r-Md-37Q"/>
+                    <constraint firstItem="T7D-3z-WFA" firstAttribute="top" secondItem="nSq-a6-AgO" secondAttribute="bottom" constant="8" id="qDB-2L-vUh"/>
+                    <constraint firstItem="T7D-3z-WFA" firstAttribute="width" secondItem="nSq-a6-AgO" secondAttribute="width" id="tec-KF-Vkb"/>
+                    <constraint firstItem="T7D-3z-WFA" firstAttribute="bottom" secondItem="YKI-83-V8z" secondAttribute="bottom" id="txp-10-84W"/>
+                    <constraint firstItem="YKI-83-V8z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="x3Q-Sw-xy2"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="nSq-a6-AgO" secondAttribute="trailing" id="zkn-B1-Zs4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconView" destination="YKI-83-V8z" id="ggp-99-TCs"/>
+                <outlet property="imtroLabel" destination="T7D-3z-WFA" id="ZnR-Cf-3iM"/>
+                <outlet property="nameLabel" destination="nSq-a6-AgO" id="OrQ-Pt-2ZL"/>
+            </connections>
+            <point key="canvasLocation" x="311" y="195.5"/>
+        </tableViewCell>
+    </objects>
+</document>
